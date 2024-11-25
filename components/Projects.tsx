@@ -21,7 +21,7 @@ const portfolioProjects = [
       { title: "Enhanced interactivity by 40% with React's real-time updates and component-based architecture." },
     ],
     link: "#", // Replace with actual live link
-    image: "/weddingcard.png", // Replace with actual image path
+    image: "/weddingcard.jpg", // Replace with actual image path
   },
   {
     title: "Pizza Ordering Chatbot",
@@ -32,7 +32,7 @@ const portfolioProjects = [
       { title: "Designed and implemented a real-time chatbot system using Dialogflow, FastAPI, SQL, and Python, reducing customer query response times by 25%." },
     ],
     link: "#", // Replace with actual live link
-    image: "/pizzabot.png", // Replace with actual image path
+    image: "/pizzabot.jpg", // Replace with actual image path
   },
 ];
 
