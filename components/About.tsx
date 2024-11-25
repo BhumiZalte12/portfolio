@@ -76,6 +76,10 @@ const toolboxItems = [
 
 export const AboutSection = () => {
   return (
+    <section id="about" className="min-h-screen bg-gray-700 text-white">
+  
+
+
     <div className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white rounded-xl">
       {/* Section Header */}
       <SectionHeader
@@ -145,5 +149,6 @@ export const AboutSection = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };

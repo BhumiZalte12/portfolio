@@ -38,6 +38,10 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
+    <section id="projects" className="min-h-screen bg-gray-800 text-white">
+  
+  
+
     <div className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white rounded-xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
@@ -106,5 +110,6 @@ export const ProjectsSection = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };

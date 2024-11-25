@@ -5,6 +5,9 @@ import grainImage from "@/public/grain.jpeg";
 
 export const HeroSection = () => {
   return (
+    <section id="home" className="min-h-screen bg-gray-900 text-white">
+  
+
     <div className="py-32 md:py-40 relative z-0 overflow-x-clip">
       {/* Background Image */}
       <div
@@ -61,5 +64,6 @@ export const HeroSection = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };

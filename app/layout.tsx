@@ -29,11 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className ={twMerge(inter.variable,calistoga.variable,
         "bg-gray-900 text-white antialiased font-sans")}>{children}
       </body>
+      
     </html>
   );
 }
