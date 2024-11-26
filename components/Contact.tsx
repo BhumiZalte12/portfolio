@@ -1,4 +1,26 @@
 export const ContactSection = () => {
+
+  const handleSubmit = async (values: any, { resetForm }: any) => {
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+  
+      if (response.ok) {
+        alert("Message sent successfully!");
+        resetForm();
+      } else {
+        const errorData = await response.json();
+        alert(`Failed to send message: ${errorData.error}`);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("An unexpected error occurred. Please try again.");
+    }
+  };
+  
     return (
         <section id="contact" className="min-h-screen bg-gray-600 text-white">
   
@@ -9,7 +31,8 @@ export const ContactSection = () => {
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
           
         </p>
-        <h2 className="text-4xl font-serif text-center mt-4">Contact Me
+        <h2 className="text-4xl font-serif text-center mt-4">
+          Contact Me
         </h2>
         <p className="text-gray-400 text-center mt-2 mb-8">
         Have a question or want to work together? Fill out the form below!        </p>
